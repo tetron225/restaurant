@@ -7,6 +7,15 @@ const homepage = () => {
     container.style.alignContent = "center";
     container.style.flexDirection = "column";
     container.style.gap = "20px"
+
+    let maintitle = document.createElement('div');
+    maintitle.setAttribute('id', 'mainTitle');
+    maintitle.style.fontSize = '36px';
+    maintitle.style.display = 'flex';
+    maintitle.style.justifyContent = 'center';
+    maintitle.style.alignItems = 'center';
+    maintitle.textContent = 'Milky Way Diner';
+
     let title = document.createElement("div");
     title.setAttribute('id', 'aTitle');
     title.style.display = "flex";
@@ -22,6 +31,7 @@ const homepage = () => {
     
     summary.textContent = "The most delicious piece of pie this side of the galaxy. Milky Way Galaxy offers a once in a lifetime dining experience for you and your family. Each cuisine represents an aspect of the planets within the Milky Way Galaxy. It also endears the taste of the planets.";
 
+    container.appendChild(maintitle);
     container.appendChild(title);
     container.appendChild(summary);
 
